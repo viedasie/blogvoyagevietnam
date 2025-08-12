@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --primary: #009F3C;
@@ -31,7 +32,7 @@
         
         header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
         
         h1 {
@@ -54,11 +55,48 @@
             margin-bottom: 1.5rem;
         }
         
+        .social-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: rgba(0, 159, 60, 0.1);
+        }
+        
+        .social-link i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
         .content {
             background-color: white;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: justify;
         }
         
         .btn {
@@ -71,6 +109,7 @@
             font-weight: 500;
             margin-top: 1rem;
             transition: background-color 0.3s;
+            text-align: center;
         }
         
         .btn:hover {
@@ -92,6 +131,27 @@
             <p class="tagline">Découvrez l'Asie du Sud-Est authentique</p>
         </header>
         
+        <div class="social-section">
+            <h2>Suivez-nous sur les réseaux sociaux</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/viedasie" class="social-link" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/viedasie" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.pinterest.com/viedasie" class="social-link" target="_blank">
+                    <i class="fab fa-pinterest-p"></i> Pinterest
+                </a>
+                <a href="https://www.youtube.com/@viedasie" class="social-link" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://linktr.ee/viedasie" class="social-link" target="_blank">
+                    <i class="fas fa-link"></i> Tous nos liens
+                </a>
+            </div>
+        </div>
+        
         <main class="content">
             <h1>Blog voyage Vietnam & Asie du Sud-Est</h1>
             
@@ -99,7 +159,9 @@
             
             <p>Viedasie.com, c'est un espace de partage, de rencontres et de découvertes autour du Vietnam, du Laos, du Cambodge, de la Thaïlande, de la Birmanie et de Bali (Indonésie).</p>
             
-            <a href="https://viedasie.com" class="btn">Visitez notre blog</a>
+            <div style="text-align: center;">
+                <a href="https://viedasie.com" class="btn">Visitez notre blog</a>
+            </div>
         </main>
         
         <footer>
