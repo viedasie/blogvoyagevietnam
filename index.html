@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
     <title>Vie d'Asie - Blog voyage Vietnam et Asie du Sud-Est</title>
+    <meta name="description" content="Découvrez l'Asie du Sud-Est authentique à travers nos récits de voyage au Vietnam, Laos, Cambodge, Thaïlande, Birmanie et Bali.">
+    <meta name="keywords" content="blog voyage vietnam, asie du sud-est, voyage authentique, hanoi, bali, luang prabang, siem reap, chiang mai">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viedasie.github.io/">
+    <meta property="og:title" content="Vie d'Asie - Blog voyage Vietnam et Asie du Sud-Est">
+    <meta property="og:description" content="Découvrez l'Asie du Sud-Est authentique à travers nos récits de voyage">
+    <meta property="og:image" content="https://viedasie.com/path-to-your-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://viedasie.github.io/">
+    <meta property="twitter:title" content="Vie d'Asie - Blog voyage Vietnam et Asie du Sud-Est">
+    <meta property="twitter:description" content="Découvrez l'Asie du Sud-Est authentique à travers nos récits de voyage">
+    <meta property="twitter:image" content="https://viedasie.com/path-to-your-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://viedasie.com/favicon.ico">
+    
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- GSC page Github -->
-    <meta name="google-site-verification" content="iCEgAalC935VGYmnK5_qgppsdAm44glViTuv4twGsuk" />
-    <!-- GSC page Netlify -->
-    <meta name="google-site-verification" content="iiQWQJlsBTRbKqs_1r7DfyIFP94q4kVO95lC80WvGHI" />
-    <!-- GSC page Vercel -->
-    <meta name="google-site-verification" content="dKG2mQofWtzmy7vfjwzXyBgzdvBzYcQhvGnJk5e1uKM" />
+    
     <style>
         :root {
             --primary: #009F3C;
@@ -41,11 +59,19 @@
             margin-bottom: 1.5rem;
         }
         
-        h1 {
+        h1, h2 {
             font-family: 'Playfair Display', serif;
             color: var(--heading);
+        }
+        
+        h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .logo {
@@ -81,21 +107,34 @@
         .social-link {
             display: inline-flex;
             align-items: center;
-            color: var(--primary);
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            color: white;
+            background-color: var(--primary);
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
+            border-radius: 50%;
             transition: all 0.3s;
         }
         
         .social-link:hover {
-            background-color: rgba(0, 159, 60, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .social-link i {
-            margin-right: 0.5rem;
             font-size: 1.2rem;
         }
+        
+        /* Different colors for different social networks */
+        .social-link.facebook { background-color: #3b5998; }
+        .social-link.instagram { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+        .social-link.pinterest { background-color: #e60023; }
+        .social-link.youtube { background-color: #ff0000; }
+        .social-link.tiktok { background-color: #000000; }
+        .social-link.twitter { background-color: #1da1f2; }
+        .social-link.linkedin { background-color: #0077b5; }
+        .social-link.tripadvisor { background-color: #00af87; }
         
         .content {
             background-color: white;
@@ -114,12 +153,24 @@
             text-decoration: none;
             font-weight: 500;
             margin-top: 1rem;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
             text-align: center;
         }
         
         .btn:hover {
             background-color: #008534;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .share-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .share-text {
+            margin-bottom: 1rem;
+            color: #666;
         }
         
         footer {
@@ -138,22 +189,31 @@
         </header>
         
         <div class="social-section">
-            <h2>Suivez-nous sur les réseaux sociaux</h2>
+            <h2>Rejoignez notre communauté</h2>
             <div class="social-links">
-                <a href="https://www.facebook.com/viedasie" class="social-link" target="_blank">
-                    <i class="fab fa-facebook-f"></i> Facebook
+                <a href="https://www.facebook.com/viedasie" class="social-link facebook" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/viedasie" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
+                <a href="https://www.instagram.com/viedasie" class="social-link instagram" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.pinterest.com/viedasie" class="social-link" target="_blank">
-                    <i class="fab fa-pinterest-p"></i> Pinterest
+                <a href="https://www.pinterest.com/viedasie" class="social-link pinterest" target="_blank" aria-label="Pinterest">
+                    <i class="fab fa-pinterest-p"></i>
                 </a>
-                <a href="https://www.youtube.com/@viedasie" class="social-link" target="_blank">
-                    <i class="fab fa-youtube"></i> YouTube
+                <a href="https://www.youtube.com/@viedasie" class="social-link youtube" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
                 </a>
-                <a href="https://linktr.ee/viedasie" class="social-link" target="_blank">
-                    <i class="fas fa-link"></i> Tous nos liens
+                <a href="https://www.tiktok.com/@viedasie" class="social-link tiktok" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/viedasie" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.tripadvisor.com/Profile/viedasie" class="social-link tripadvisor" target="_blank" aria-label="TripAdvisor">
+                    <i class="fab fa-tripadvisor"></i>
+                </a>
+                <a href="https://linktr.ee/viedasie" class="social-link" target="_blank" aria-label="Tous nos liens">
+                    <i class="fas fa-link"></i>
                 </a>
             </div>
         </div>
@@ -170,9 +230,49 @@
             </div>
         </main>
         
+        <div class="share-section">
+            <p class="share-text">Partagez cette page</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://viedasie.github.io" class="social-link facebook" target="_blank" aria-label="Partager sur Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://viedasie.github.io&text=Découvrez%20Vie%20d'Asie%20-%20Blog%20voyage%20Vietnam%20et%20Asie%20du%20Sud-Est" class="social-link twitter" target="_blank" aria-label="Partager sur Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://viedasie.github.io&title=Vie%20d'Asie%20-%20Blog%20voyage%20Vietnam%20et%20Asie%20du%20Sud-Est" class="social-link linkedin" target="_blank" aria-label="Partager sur LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://pinterest.com/pin/create/button/?url=https://viedasie.github.io&media=https://viedasie.com/path-to-your-image.jpg&description=Découvrez%20l'Asie%20du%20Sud-Est%20authentique" class="social-link pinterest" target="_blank" aria-label="Partager sur Pinterest">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="whatsapp://send?text=Découvrez Vie d'Asie - Blog voyage Vietnam et Asie du Sud-Est https://viedasie.github.io" class="social-link" style="background-color: #25D366;" target="_blank" aria-label="Partager sur WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:?subject=Vie d'Asie - Blog voyage Vietnam et Asie du Sud-Est&body=Découvrez l'Asie du Sud-Est authentique: https://viedasie.github.io" class="social-link" style="background-color: #777;" aria-label="Partager par email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
         <footer>
             <p>&copy; 2023 Vie d'Asie. Tous droits réservés.</p>
         </footer>
     </div>
+    
+    <script>
+        // Simple script to handle share buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Open share links in smaller window
+            const shareLinks = document.querySelectorAll('.share-section .social-link');
+            shareLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if(!this.getAttribute('href').includes('mailto') && !this.getAttribute('href').includes('whatsapp')) {
+                        e.preventDefault();
+                        window.open(this.href, 'sharewindow', 'width=600,height=400');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
